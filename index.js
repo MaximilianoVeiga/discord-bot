@@ -17,17 +17,6 @@ client.on('message', message => {
 
     const command = message.content.split(PREFIX)[1];
 
-    if (command === 'olá') {
-        message.channel.send('mundo');
-    } else if (command === 'mensagem colorida') {
-        const embed = new MessageEmbed()
-            .setTitle('Título maneiro')
-            .setColor('0xff0000')
-            .setDescription('Olá, tudo bem?\nOutra linha.')
-            .setAuthor('Eu')
-
-        message.channel.send(embed);
-    }
 });
 
 client.login(DISCORD_BOT_SECRET);
